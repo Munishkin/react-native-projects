@@ -1,0 +1,53 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "semi": "error",
+        "class-methods-use-this": "off",
+        "consistent-return": "off",
+        "camelcase": "off",
+        "no-console": "off",
+        "no-use-before-define": [
+            "error",
+            {
+                "variables": false
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "prettier/prettier": [
+            "error"
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "src",
+                    "assets"
+                ]
+            }
+        }
+    }
+}
